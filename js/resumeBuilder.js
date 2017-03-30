@@ -4,7 +4,7 @@ var bio = {
   "contacts" : {
     "mobile" : "+55119********",
     "email" : "g*************o@gmail.com",
-    "giihub" : "glau-isidoro",
+    "github" : "glau-isidoro",
     "twitter" : "@************",
     "location" : "São Paulo"
   },
@@ -70,10 +70,22 @@ var projects = {
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#header").prepend(formattedBioPic);
+$("#header").append(formattedMobile);
+$("#header").append(formattedEmail);
+$("#header").append(formattedGithub);
+$("#header").append(formattedTwitter);
+$("#header").append(formattedLocation);
+$("#header").append(formattedBioPic);
+$("#header").append(formattedWelcomeMsg);
 
 if(bio.skills.length > 0) {
   $("#header").append(HTMLskillsStart);
@@ -106,3 +118,10 @@ function displayWork() {
 }
 
 displayWork();
+
+$(document).click(function(loc) {
+  var x = loc.pageX;
+  var y = loc.pageY;
+
+  logClicks(x,y);
+})
