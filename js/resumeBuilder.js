@@ -60,8 +60,8 @@ var projects = {
     "dates" : "2016",
     "description" : "Make muffins hate dog, and attack the dog then pretend like nothing happened for leave hair everywhere. Chase red laser dot spit up on light gray carpet instead of adjacent linoleum knock over christmas tree and make meme, make cute face meow. Curl into a furry donut shake treat bag poop in litter box, scratch the walls find something else more interesting purr for no reason meowzer!. Hopped up on catnip massacre a bird in the living room and then look like the cutest and most innocent animal on the planet.",
     "images" : [
-      "http://placekitten.com/200/300",
-      "http://placekitten.com/200/300"
+      "images/gato01.jpg",
+      "images/gato02.jpg"
     ]
   }
   ]
@@ -125,3 +125,38 @@ $(document).click(function(loc) {
 
   logClicks(x,y);
 })
+
+function inName(name) {
+  name = name.trim().split(" ");
+  console.log(name);
+  name[1] = name[1].toUpperCase();
+  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+
+  return name[0] + " " + name[1];
+}
+
+$('#main').append(internationalizeButton);
+
+projects.display = function() {
+  for (project in projects.projects) {
+    $("#projects").append(HTMLprojectStart);
+
+    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+    $(".project-entry:last").append(formattedTitle);
+
+    var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+    $(".project-entry:last").append(formattedDates);
+
+    var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+    $(".project-entry:last").append(formattedDescription);
+
+    if (projects.projects[project].images.lenght > 0) {
+      for (image in projects.projects[project].images) {
+        var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+        $(".project-entry:last").append(formattedImage);
+      }
+    }
+  }
+}
+
+projects.display();
