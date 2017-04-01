@@ -97,6 +97,8 @@ a {
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
+  display: block;
+  padding-top: 1rem; 
 }
 
 #skills-h3 {
@@ -142,7 +144,14 @@ a {
 }
 
 .flex-column {
-  display: flex;
+  display: inline;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.flex-item {
+  display: inline;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
@@ -154,6 +163,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+li {
+  display: block;
 }
 
 .biopic {
