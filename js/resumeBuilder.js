@@ -4,8 +4,8 @@ var bio = {
   "contacts" : {
     "mobile" : "+55119********",
     "email" : "g*************o@gmail.com",
+    "linkedin" : "glauciaisidoro",
     "github" : "glau-isidoro",
-    "twitter" : "@************",
     "location" : "São Paulo"
     },
   "welcomeMessage" : "Cat ipsum dolor sit amet, if it smells like fish eat as much as you wish",
@@ -19,8 +19,8 @@ var bio = {
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
     var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var formattedLinkedin = HTMLlinkedin.replace(/%data%/g, bio.contacts.linkedin);
+    var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
@@ -28,8 +28,8 @@ var bio = {
     $("#header").prepend(formattedName);
     $("#header").append(formattedMobile);
     $("#header").append(formattedEmail);
+    $("#header").append(formattedLinkedin);
     $("#header").append(formattedGithub);
-    $("#header").append(formattedTwitter);
     $("#header").append(formattedLocation);
     $("#header").append(formattedBioPic);
     $("#header").append(formattedWelcomeMsg);
@@ -139,8 +139,11 @@ var projects = {
     "dates" : "2016",
     "description" : "Make muffins hate dog, and attack the dog then pretend like nothing happened for leave hair everywhere. Chase red laser dot spit up on light gray carpet instead of adjacent linoleum knock over christmas tree and make meme, make cute face meow. Curl into a furry donut shake treat bag poop in litter box, scratch the walls find something else more interesting purr for no reason meowzer!. Hopped up on catnip massacre a bird in the living room and then look like the cutest and most innocent animal on the planet.",
     "images" : [
-      "images/gato01.jpg",
-      "images/gato02.jpg"
+      "http://lorempixel.com/1500/700/cats/3/",
+      "http://lorempixel.com/1500/700/cats/9/",
+      "http://lorempixel.com/1500/700/cats/8/",
+      "http://lorempixel.com/1500/700/cats/4/",
+      "http://lorempixel.com/1500/700/cats/5/",
       ]
     }
   ],
@@ -158,10 +161,15 @@ var projects = {
       $(".project-entry:last").append(formattedDescription);
 
       if (projects.projects[project].images.length > 0) {
+        $(".project-entry:last").append('<div id="imagens-projeto" class="carousel carousel-slider">');
+        var i = 0;
+        var ordem = ['one!','two!','three!','four!','five!'];
         for (image in projects.projects[project].images) {
-          var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-          $(".project-entry:last").append(formattedImage);
+          var formattedImage = HTMLprojectImage.replace("%ordem%", ordem[i]).replace("%data%", projects.projects[project].images[image]);
+          $("#imagens-projeto:last").append(formattedImage);
+          i++;
         }
+        $(".project-entry:last").append('</div>');
       }
     }
   }
@@ -175,8 +183,6 @@ function inName(name) {
 
   return name[0] + " " + name[1];
 }
-
-$('#main').append(internationalizeButton);
 
 bio.display();
 education.display();

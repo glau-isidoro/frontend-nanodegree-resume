@@ -18,20 +18,17 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 <head>
   <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
-
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
-
   <!-- Load the page styles. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?c2sn1i">
   <link href="css/style.css" rel="stylesheet">
-
-
-
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
   -->
   <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -40,23 +37,20 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="topContacts" class="flex-box"></ul>
     </div>
     <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
+    <div id="workExperience" class="content gray">
+      <h2><i class="small material-icons">work</i>Work Experience</h2>
     </div>
-    <div id="projects">
-      <h2>Projects</h2>
+    <div id="projects" class="content">
+      <h2><i class="small material-icons">content_paste</i>Projects</h2>
     </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
+    <div id="education" class="content gray">
+      <h2><i class="small material-icons">work</i>Education</h2>
     </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+    <div id="mapDiv" class="content">
+      <h2><i class="small material-icons">school</i>Where I've Lived and Worked</h2>
     </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
+    <div style="clear: both;"></div>
+    <div id="footer"></div>
   </div>
 
   <!-- "HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy."
@@ -89,6 +83,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   dynamically when this website, index.html, is opened.
   -->
   <script src="js/resumeBuilder.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
 
   <!--
