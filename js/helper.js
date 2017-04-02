@@ -19,7 +19,7 @@ var HTMLmobile = '<li class="flex-item"><span class="orange-text"><i class="smal
 var HTMLemail = '<li class="flex-item"><span class="orange-text"><span class="socicon-mail"></span></span><span class="white-text">%data%</span></li>';
 var HTMLlinkedin = '<li class="flex-item"><a href="https://www.linkedin.com/in/%data%/" target="_blank"><span class="orange-text"><span class="socicon-linkedin"></span></span><span class="white-text">%data%</span></a></li>';
 var HTMLgithub = '<li class="flex-item"><a href="https://github.com/%data%" target="_blank"><span class="orange-text"><span class="socicon-github"></span></span><span class="white-text">%data%</span><a></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text"><i class="small material-icons"> location_on</i></span><span class="white-text">%data%</span></li>';
+var HTMLlocation = '<li class="flex-item"><span class="orange-text"><i class="small material-icons">location_on</i></span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -74,7 +74,7 @@ $(document).ready(function() {
   });
 
   $(window).resize(function(){
-    location.reload();
+    //location.reload();
   });
 
 });

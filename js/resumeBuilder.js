@@ -26,13 +26,18 @@ var bio = {
 
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
-    $("#header").append(formattedMobile);
-    $("#header").append(formattedEmail);
-    $("#header").append(formattedLinkedin);
-    $("#header").append(formattedGithub);
-    $("#header").append(formattedLocation);
+    $("#topContacts").append(formattedMobile);
+    $("#topContacts").append(formattedEmail);
+    $("#topContacts").append(formattedLinkedin);
+    $("#topContacts").append(formattedGithub);
+    $("#topContacts").append(formattedLocation);
     $("#header").append(formattedBioPic);
     $("#header").append(formattedWelcomeMsg);
+    $("#bottomContacts").append(formattedMobile);
+    $("#bottomContacts").append(formattedEmail);
+    $("#bottomContacts").append(formattedLinkedin);
+    $("#bottomContacts").append(formattedGithub);
+
 
     if(bio.skills.length > 0) {
       $("#header").append(HTMLskillsStart);
