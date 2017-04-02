@@ -9,302 +9,311 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .clear-fix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+    padding: 0 5%;
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
+    font-size: 40px;
+    color: #f5a623;
+    line-height: 48px;
+    display: inline;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #999;
+    line-height: 29px;
+    padding: 10px;
 }
 
 h2 i {
-  vertical-align: sub;
-  width: 40px;
+    vertical-align: sub;
+    width: 40px;
 }
 
 h3 {
-  font-size: 1.2em;
-  color: #000;
-  line-height: 1.25em;
-  padding-left: 1em;
-  padding-bottom: 0;
-  padding-top: 1em;
+    font-size: 1.2em;
+    color: #000;
+    line-height: 1.25em;
+    padding-left: 1em;
+    padding-bottom: 0;
+    padding-top: 1em;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
 }
 
 h2,
 h4,
 h5 {
-  padding: 10px 5%;
-
+    padding: 10px 5%;
 }
 
 #header .jobtitle {
-  color: #fff;
-  display: block;
+    color: #fff;
+    display: block;
 }
 
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  float: left;
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    float: right;
 }
 
 p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
 }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-  display: block;
-  padding-top: 1rem;
+    font-style: italic;
+    font-size: 18px;
+    color: #f3f3f3;
+    line-height: 28px;
+    display: block;
+    padding-top: 1rem;
 }
 
 #skills-h3 {
-  color: #f5ae23;
-  display: none;
+    color: #f5ae23;
+    display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+    background-color: #f5ae23;
 }
 
 .orange-text {
-  vertical-align: sub;
-  color: #f5ae23;
+    vertical-align: sub;
+    color: #f5ae23;
 }
 
 .white-text {
-  vertical-align: super;
-  font-weight: bold;
-  color: #fff;
+    vertical-align: super;
+    font-weight: bold;
+    color: #fff;
 }
 
 body {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 .gray {
-  background-color: #efefef;
-  padding-bottom: 10px;
-  clear: both;
+    background-color: #efefef;
+    padding-bottom: 10px;
+    clear: both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+    background-color: #4a4a4a;
 }
 
 #header {
-  background-image: url("../images/feathers.jpg");
-  background-position: center -650px;
-  background-size: 100% auto;
+    background-image: url("../images/feathers.jpg");
+    background-position: center -650px;
+    background-size: 100% auto;
 }
 
 #footer {
-  background-image: url("../images/feathers.jpg");
-  background-position: center center;
-  background-size: 100% auto;
-  height: 6em;
-  text-align: center;
+    background-image: url("../images/feathers.jpg");
+    background-position: center center;
+    background-size: 100% auto;
+    height: 6em;
+    text-align: center;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .flex-column {
-  display: inline;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+    display: inline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
 
 .flex-item {
-  display: inline;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+    display: inline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
 }
 
 .flex-item a {
-  display: inline;
+    display: inline;
 }
 
 .center-content {
-  padding: 2.5% 5%;
+    padding: 2.5% 5%;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 li {
-  display: block;
+    display: block;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
 }
 
 img {
-  padding: 10px;
+    padding: 10px;
 }
 
 span {
-  padding: 5px;
+    padding: 5px;
 }
 
 #bottomContacts {
-  display: none;
+    display: none;
 }
+
 #bottomContacts li {
-  padding-top: 30px;
-  display: inline-block;
+    padding-top: 30px;
+    display: inline-block;
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+    display: block;
+    height: 100%;
+    margin: 0 5%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
+    height: 400px;
+    width: 100%;
 }
 
 [class*="socicon-"]:before {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 /* Media queries to handle various device widths */
 @media only screen and (max-width: 1024px) {
-  #mapDiv {
-    padding-bottom: 10%;
-  }
+    #mapDiv {
+        padding-bottom: 10%;
+    };
 }
 
 @media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
+    .biopic {
+        width: 175px;
+    };
 }
 
 @media only screen and (max-width: 750px) {
-  .flex-item {
-    display: block;
-    width: 100%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-  .orange-text > span,
-  .orange-text > i {
-    width: 40px;
-    text-align: center;
-  }
-  .content {
-    margin-bottom: 20px;
-  }
-  #mapDiv {
-    padding-bottom: 25% !important;
-  }
+    .flex-item {
+        display: block;
+        width: 100%;
+    }
 
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    }
+
+    .orange-text > span,
+  .orange-text > i {
+        width: 40px;
+        text-align: center;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    #mapDiv {
+        padding-bottom: 25% !important;
+    };
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
+    #skills-h3,
   .biopic {
-    display: block;
-  }
-  #bottomContacts {
-    display: inline;
-  }
+        display: block;
+    }
+
+    #bottomContacts {
+        display: inline;
+    };
 }
+
 @media only screen and (min-width: 1024px) {
-  #header, .content {
-    padding: 2.5% 5%;
-  }
-  #mapDiv {
-    padding-bottom: 10% !important;
-  }
+    #header, .content {
+        padding: 2.5% 5%;
+    }
+
+    #mapDiv {
+        padding-bottom: 10% !important;
+    };
 }
+
 @media only screen and (min-width: 1280px) {
-  #header, .content {
-    padding: 2.5% 15%;
-  }
-  #mapDiv {
-    padding-bottom: 5% !important;
-  }
+    #header, .content {
+        padding: 2.5% 15%;
+    }
+
+    #mapDiv {
+        padding-bottom: 5% !important;
+    };
 }
+
 @media only screen and (min-width: 1600px) {
-  #header, .content {
-    padding: 1% 20%;
-  }
+    #header, .content {
+        padding: 1% 20%;
+    };
 }
