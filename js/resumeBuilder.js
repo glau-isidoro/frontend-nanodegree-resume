@@ -48,7 +48,7 @@ var bio = {
         var formattedSkill = HTMLskills.replace(data, bio.skills[i]);
         $("#skills").append(formattedSkill);
       }
-    };
+    }
   }
 };
 
@@ -184,13 +184,10 @@ var projects = {
 
       if (projects.projects[i].images.length > 0) {
         $(".project-entry:last").append('<div id="imagens-projeto" class="carousel carousel-slider">');
-        var n = 0;
-        var ordem = ['one!','two!','three!','four!','five!'];
-        for (image in projects.projects[i].images) {
-          var formattedImage = HTMLprojectImage.replace("%ordem%", ordem[n])
-                              .replace(data, projects.projects[i].images[n]);
+        for (var c = 0; c < projects.projects[i].images.length; c++) {
+          var formattedImage = HTMLprojectImage.replace("%ordem%", c + 1)
+                              .replace(data, projects.projects[i].images[c]);
           $("#imagens-projeto:last").append(formattedImage);
-          n++;
         }
         $(".project-entry:last").append('</div>');
       }
