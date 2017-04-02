@@ -60,14 +60,15 @@ var work = {
     "employer" : "Metasix",
     "title" : "Programadora de Sistemas",
     "dates" : "Julho 2016 - atualmente",
-    "description" : "Cat ipsum dolor sit amet, then cats take over the world poop on grasses. See owner, run in terror and sometimes switches in french and say miaou just because well why not flop over cat is love, cat is life. Russian blue kitty scratches couch bad kitty sit and stare ignore the squirrels, you'll never catch them anyway, chase imaginary bugs."
+    "description" : "Cat ipsum dolor sit amet, then cats take over the world poop on grasses. See owner, run in terror and sometimes switches in french and say miaou just because well why not flop over cat is love, cat is life. Russian blue kitty scratches couch bad kitty sit and stare ignore the squirrels, you'll never catch them anyway, chase imaginary bugs.",
+    "url" : "http://www.metasix.com.br/",
     }
   ],
   display : function() {
     for (job in work.jobs) {
       $("#workExperience").append(HTMLworkStart);
 
-      var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+      var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer).replace("%url%", work.jobs[job].url);
       var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
       var formattedEmployerTitle = formattedEmployer + formattedTitle;
       $(".work-entry:last").append(formattedEmployerTitle);
@@ -88,14 +89,16 @@ var education = {
       "city" : "São Paulo, SP, BR",
       "degree" : "profissionalizante",
       "dates" : 2016,
-      "major" : "Formação Java",
+      "major" : "Formação Java - Java e Orientação a Objetos / Java para Desenvolvimento Web / Laboratório Java com Testes, JSF e Design Patterns.",
+      "url" : "https://www.caelum.com.br/cursos-java/",
     },
     {
       "name" : "Campus Code",
       "city" : "São Paulo, SP, BR",
       "degree" : "profissionalizante",
       "dates" : 2016,
-      "major" : "Intensivo Ruby on Rails",
+      "major" : "Imersão Ruby on Rails",
+      "url" : "https://www.campuscode.com.br/imersao-web",
     }
   ],
   "onlineCourses" : [
@@ -110,7 +113,7 @@ var education = {
     for (school in education.schools) {
       $("#education").append(HTMLschoolStart);
 
-      var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+      var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("%url%", education.schools[school].url);
       $(".education-entry:last").append(formattedName);
       var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
       $(".education-entry:last").append(formattedDegree);
@@ -125,7 +128,7 @@ var education = {
     for (course in education.onlineCourses) {
       $(".education-entry:last").append(HTMLonlineClasses);
 
-      var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+      var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title).replace("%url%", education.onlineCourses[course].url);
       $(".education-entry:last").append(formattedTitle);
       var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
       $(".education-entry:last").append(formattedSchool);
